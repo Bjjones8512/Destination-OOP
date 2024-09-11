@@ -1,5 +1,5 @@
-const Plane = require('../classes/Plane');
-const Person = require('../classes/Person');
+const Plane = require('../../classes/Plane');
+const Person = require('../../classes/Person');
 
 describe('Plane Class', () => {
     
