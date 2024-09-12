@@ -1,3 +1,9 @@
+
+class Bag {}
+
+
+module.exports = Bag;
+
 class Bag {
     constructor(weight, id) {
       this.weight = weight;
@@ -14,4 +20,3 @@ class Bag {
   }
   
   module.exports = Bag;
-  
