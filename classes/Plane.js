@@ -3,7 +3,7 @@ const Airport = require('./Airport');
 class Plane extends Airport {
     #passengers;  // Private field
 
-    constructor(company, origin, destination) {
+    constructor(company, origin, destination,) {
         super(origin, origin.airportCode);
         this.company = company;
         this.destination = destination;

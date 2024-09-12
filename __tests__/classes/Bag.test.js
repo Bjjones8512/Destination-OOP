@@ -1,4 +1,7 @@
+
+
 const Bag = require('../../classes/Bag')
+
 const Person =require('../../classes/Person')
 
 test("Can create an instance of the Bag class", () => {
