@@ -11,14 +11,15 @@ describe('Plane Class', () => {
 
     //Check that company and destination are correctly assigned
     test('should assign company and destination correctly', () => {
-        const pl1 = new Plane('Delta', 'LAX');
+        const pl1 = new Plane('Delta',"company", 'LAX', passengers = []);
         expect(pl1.company).toBe('Delta');
         expect(pl1.destination).toBe('LAX');
     });
 
     //Verify that passengers initialize as an empty array
     test('should initialize passengers as an empty array', () => {
-        const pl1 = new Plane('Delta', 'LAX');
+        let passengers = []
+        const pl1 = new Plane('Delta',"company", 'LAX', passengers=[]);
         expect(pl1.passengers).toEqual([]);
     });
 
