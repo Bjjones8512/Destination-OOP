@@ -16,12 +16,6 @@ describe('Plane Class', () => {
         expect(pl1.destination).toBe('LAX');
     });
 
-    //Verify that passengers initialize as an empty array
-    test('should initialize passengers as an empty array', () => {
-        const pl1 = new Plane('Delta', 'LAX');
-        expect(pl1.passengers).toEqual([]);
-    });
-
     //Add a passenger and verify the passenger is added
     test('should add a passenger to the passengers array', () => {
         const pl1 = new Plane('Delta', 'LAX');

@@ -1,4 +1,4 @@
-const Bag = require('../../classes/Bag')
+import Bag from '../../classes/Bag';
 
 test("Can create an instance of the Bag class", () => {
   const bag = new Bag(5, 3);
