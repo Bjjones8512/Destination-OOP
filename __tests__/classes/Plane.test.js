@@ -11,20 +11,20 @@ describe('Plane Class', () => {
 
     //Check that company and destination are correctly assigned
     test('should assign company and destination correctly', () => {
-        const pl1 = new Plane('Delta', 'LAX');
+        const pl1 = new Plane('Delta',"company", 'LAX', passengers = []);
         expect(pl1.company).toBe('Delta');
         expect(pl1.destination).toBe('LAX');
     });
 
-    //intialize empty array with getPassenger
-    test('Should initialize emphty array', () => {
-        const pl1 = new Plane ('Delta', "Company", LAX, passengers = [])
-        expect(pl1.getPassengers()).toEqual([])
-    })
+    //Verify that passengers initialize as an empty array
+    test('should initialize passengers as an empty array', () => {
+        const pl1 = new Plane('Delta',"company", 'LAX', passengers=[]);
+        expect(pl1.getPassengers()).toEqual([]);
+    });
 
     //Add a passenger and verify the passenger is added
     test('should add a passenger to the passengers array', () => {
-        const pl1 = new Plane('Delta', 'LAX');
+        const pl1 = new Plane('Delta',"company", 'LAX', passengers=[]);
         const p1 = new Person('John Doe', 'LAX');
         pl1.addPassenger(p1);
         expect(pl1.passengers.length).toBe(1);
